@@ -1,0 +1,479 @@
+/*
+Responsive 996px grid system ~ Style CSS.
+Copyright 2013, Josh Cope
+*/
+
+/* =============================================================================
+   Site Styles
+   ========================================================================== */
+/*    div{border: solid 1px pink;} */
+   
+   #about_the_data{
+     z-index: 2;
+     position: absolute;
+     top: 10%;
+     width: 60%;
+     left:18%;
+     background: white;
+     padding: 1em;
+     margin: auto;
+     display: none;
+   }
+
+  .about_the_data {
+    text-decoration: underline;
+   }
+   
+   h1{
+     line-height: 1.2em;
+     margin: 0;
+     padding: 0;
+   }
+   h2{
+     line-height: 1.2em;
+     margin: 0;
+     padding: 0;
+   }
+   
+   #disclosure{
+     color: #444;
+   }
+   
+   .lz {
+    background-image: url('../img/desktop_back.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 30em;
+  }
+
+  .lt-ie9 .lz {
+    background: url('../img/desktop_back.png') -21px 0 no-repeat;
+  }
+
+  .lt-ie8 .lz {
+    width: 996px;
+  }
+  
+  .lz h1.title {
+    margin: 1em 0 0 1.1em;
+    font-size: 24pt;
+  }
+
+  .lt-ie9 .lz h1.title {
+    margin-left: 3.5%;
+  }
+
+  .lz h2.sub_title{ 
+    margin: 0.5em 0 0 2em;
+    font-size: 14pt;
+  }
+  
+  .lt-ie8 h2.sub_title{
+    margin-left: -15px;
+  }
+
+  .tool_component{
+    margin: 3em 0 0 0;
+    padding: 0;
+    height: 20em;
+  }
+  
+  #input{
+    margin-left: 3em;
+    color: white;
+  }
+
+  .lt-ie8 #input {
+    /*border: solid 1px green;*/
+    margin-left: 40px;
+  }
+  
+  #zip_field, #age_band_select{
+    width: 7em;
+  }
+  
+  #results{
+    margin-left: 1.5em;
+  }
+
+.lt-ie8 #results {
+  /*border: solid 1px blue;*/
+  width: 306px;
+}
+  
+  #results h3{
+    margin: 0;
+    padding: 0;
+  }
+  
+  #results h4{
+    margin: 0.5em 0 0.5em 0;
+    padding: 0;
+    font-size: 48pt;
+  }
+  
+  #call_to_action{
+    margin-left: 5em;
+    width: 17em;
+    padding-left: 0.3em;
+    margin-top: 20px;
+  }
+
+  .lt-ie9 #call_to_action {
+    width: 235px;
+    margin-right: -20px;
+    padding-left: 40px;
+  }
+
+  #call_to_action p{
+    margin-top: 0;
+    font-size: 12pt;
+    line-height: 1.2em;
+  }
+  
+  #increase_contribution_button{
+    padding: 0 0 0.5em 0;
+  }
+  #about_the_data_link{
+    margin: 1em 0;
+  }
+
+  #about_the_data_link a{
+    text-decoration: none;
+  }
+
+  #about_the_data_link p{
+    font-size: 8pt;
+  }
+  
+  #disclosure{
+    font-size: 10pt;
+    line-height: 1.2em;
+  }
+
+  
+   
+/* =============================================================================
+   Page Styles
+   ========================================================================== */
+
+/* =============================================================================
+   Media Queries
+   ========================================================================== */
+
+ 
+
+@media only screen and (min-width: 996px) and (max-width: 1140px) {
+
+  .lz {
+    /*border: solid 2px red !important;*/
+  }
+
+  #input {
+    margin-left: -8px !important;
+  }
+
+  .lt-ie9 .lz h1.title {
+    margin-left: -15px;
+  }
+
+  .lt-ie9 .lz h2.sub_title {
+    margin-left: -15px;
+  }
+}
+
+
+/* Tablet Portrait size to Base 996px */
+@media only screen and (min-width: 768px) and (max-width: 996px) {
+  body{
+    /*background: blue; */
+  }
+  .lz{
+    background-image: url('../img/tablet_back.png');
+    background-repeat: no-repeat;
+    margin: auto;
+    height: 50em;
+    /*
+    max-width: 768px;
+    min-width: 768px;
+    */
+  }
+
+  .lt-ie9 .lz {
+    background: url('../img/tablet_back.png') 0 0px no-repeat !important;
+  }
+  
+  .lz h1.title{
+    margin: 0.5em 0 0 0;
+    font-size: 24pt;
+  }
+
+  .lz h2.sub_title{
+    margin: 0.5em 0 0 0;
+    font-size: 11pt;
+  }
+  
+  .tool_component{
+    margin: 2.5em 0 0 0;
+    padding: 0;
+    height: 18em
+  }
+  #input{
+    margin-left: 0em;
+  }
+  #results{
+    margin-left: 6em;
+  }
+  #call_to_action{
+    margin: 0;
+    padding: 0;
+    width: 17em;
+  }
+  
+  #disclosure{
+    margin-top: 2em;
+    margin-left: 0;
+  }
+
+  .lt-ie9 #input {
+    margin-left: 20px !important;
+  }
+
+  .lt-ie9 .lz h1.title {
+    margin-left: -15px;
+  }
+
+  .lt-ie9 .lz h2.sub_title {
+    margin-left: -15px;
+  }
+
+}
+
+/* All Mobile Sizes */
+@media only screen and (max-width: 767px) {
+  body{
+/*     background: red; */
+  }
+
+  .lt-ie9 .lz h1.title {
+    margin-left: -15px;
+  }
+
+  .lt-ie9 .lz h2.sub_title {
+    margin-left: -15px;
+  }
+}
+
+/* Mobile Landscape Size to Tablet Portrait */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  body{
+/*     background: green; */
+  }
+  .lz{
+    background-image: url('../img/mobile_wide_back.png');
+    max-width: 480px;
+    min-width: 480px;
+    height: 140em;
+  }
+
+  .lt-ie9 .lz {
+    background: url('../img/tablet_back.png') 0 -81px no-repeat !important;
+    /*border: solid 2px red;*/
+  }
+
+  .lz h1.title{
+    margin: 1em 0 0 0;
+    font-size: 24pt;
+  }
+
+  .lz h2.sub_title{
+    margin: 0.5em 0 0 0;
+    font-size: 14pt;
+  }
+  .tool_component{
+    margin: 0 0 0 0;
+    padding: 0;
+    width: 100% !important;
+  }
+  #input, #results, #call_to_action{
+    margin: 0;
+    padding: 0;
+  }
+  #input{
+    margin-top: 9em;
+    padding-left: 2em;
+  }
+
+  #results{
+    margin-top: 3em;  
+    padding-left: 2em;
+  }
+  #results h4{
+    font-size: 58pt;
+  }
+  #call_to_action{
+    margin-top: 6em;
+  }
+
+  #call_to_action p{
+     font-size: 14pt;
+  }
+  #increase_contribution_button{
+    width: 18em;
+    padding: 1em 0 1em 1em; 
+    margin: auto;
+  }
+  #disclosure{
+    margin-top: 6em;
+  }
+
+  .lt-ie9 #call_to_action {
+    margin-left: -30px !important;
+    margin-top: 80px !important;
+  }
+
+  .lt-ie9 #disclosure{
+    margin-top: 14em;
+  }
+
+  .lt-ie9 #input{
+    line-height: 1em;
+    height: 14em;
+    margin-left: 30px !important;
+  }
+
+  .lt-ie9 #results {
+    margin-top: 6em;
+  }
+
+}
+
+/* Mobile Portrait Size to Mobile Landscape Size */
+@media only screen and (max-width: 479px) {
+  body{
+/*     background: yellow; */
+  }
+  .lz{
+    background-image: url('../img/mobile_back.png');
+    max-width: 320px;
+    min-width: 320px;
+    height: 100em;
+  }
+  
+  .lz h1.title{
+    margin: 1em 0 0 0;
+    font-size: 22pt;
+    line-height: 1em;
+  }
+
+  .lz h2.sub_title{
+    margin: 0.5em 0 0 0;
+    font-size: 12pt;
+  }
+  .tool_component{
+    margin: 0;
+    padding: 0;
+    width: 100% !important;
+  }
+   #input, #results, #call_to_action{
+    margin: 0;
+    padding: 0;
+  }
+  
+  .lt-ie9 #input{
+    line-height: 1em;
+    height: 14em;
+    margin-left: 0 !important;
+  }
+
+  #results{
+    margin-top: 0em;
+    height: 14em;
+  }
+  #results h3{
+    font-size: 12pt;
+  }
+  #results h4{
+    font-size: 40pt;
+  }
+  #call_to_action {
+    margin-top: 4em;
+    height: 14em;
+  }
+  #disclosure{
+    margin-top: 2em;
+    background: white;
+  }
+
+  .lt-ie9 #disclosure{
+    margin-top: 4em;
+    margin-left: -2em;
+  }
+}
+
+@media (max-width: 480px) {
+  .lt-ie9 #call_to_action {
+    margin-left: -35px !important;
+    margin-top: 80px !important;
+  }
+}
+
+@media (max-width: 320px) {
+
+  #input {
+    height: 225px;
+  }
+
+  .tool_input {
+    line-height: 1em !important;
+  }
+
+  #results {
+    margin-top: 1em;
+  }
+
+  #increase_contribution_button + p {
+    margin-top: 0em;
+  }
+
+  #disclosure {
+    margin-top: 2em;
+    float: left;
+    margin-left: -10px;
+    min-height: 500px;
+  }
+
+  #call_to_action {
+    margin-top: 40px;
+  }
+
+  .lz h1.title{
+    margin: 1em 0 0 -15px;
+    font-size: 22pt;
+    line-height: 1em;
+  }
+
+  .lz h2.sub_title{
+    margin: 0.5em 0 0 -15px;
+    font-size: 12pt;
+  }
+}
+
+.lt-ie9 #take_the_next {
+    margin-top: 10px !important;
+}
+/* =============================================================================
+   Font-Face
+   ========================================================================== */
+/* This is the proper syntax for an @font-face file
+
+/* @font-face {
+font-family: 'FontName';
+src: url('../fonts/FontName.eot');
+src: url('../fonts/FontName.eot?iefix') format('embedded-opentype'),
+url('../fonts/FontName.woff') format('woff'),
+url('../fonts/FontName.ttf') format('truetype'),
+url('../fonts/FontName.svg#FontName') format('svg');
+font-weight: normal;
+font-style: normal; }
+*/
